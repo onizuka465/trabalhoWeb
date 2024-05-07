@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Malevolente</title>
+    <link rel="stylesheet" href="style.css">
+    <button style="position: absolute; right: 0%; top: 0%;" id="theme-toggle">Alternar Tema</button>
+    <header id="title_style">
+        <div style="justify-self: center;">
+            <h1 style="color: white;" id="titulo_princ">Cozinha Malevolente</h1>
+            <h2 style="color:red" id="subtitulo">Somente as melhores receitas do Japão</h2>
+         
+        </div>
+    </header>
+    <section class="tela_fundo"  style="text-align: center;">
+        <ul class="horizontal-list">
+            <li><a href="HomepageCulinaria.html">Inicio</a></li>
+            <li><a style="color: red;" href="receitas.html">Receitas</a></li>
+            <li><a href="Restaurante.html">Restaurantes</li>
+            <li><a href="Contato1.html">Contato</li>
+            <li><a href="Sobre1.html">Sobre</li>
+            <li><a href="config.html"></a></li>
+            
+        </ul>
+    </section>
+    
+</head>
+    <body class="dark-mode">
+        <div style="display: flex; justify-content: center; align-items: center; margin: 5px;">
+            <div class="abas">
+                <p onclick="showReceitasGeral()" style="cursor: pointer;">Geral</p>
+            </div>
+            <div class="abas">
+                <p onclick="showReceitasFavoritas()" style="cursor: pointer;">Favoritas</p>
+            </div>
+
+        </div>
+        <section class="ReceitPerfil" id="ReceitasGeral">
+            <ul>
+
+                <li>
+                    <div class="receita" style="border-style: ridge; border-color: brown;" id="Receita1">
+                      <h2>Karaage Seis Olhos</h2>
+
+                      <img src="https://static01.nyt.com/images/2018/07/25/dining/HK-karaage-horizontal/merlin_141075300_74569dec-9fc2-4174-931d-019dddef3bb8-superJumbo.jpg" height="150" width="150">
+                      <p>Pedaços de frango destrinchados e temperados, onde apenas os paladares mais fortes e adaptados podem aguentar seu grande sabor!</p>
+                    </div>
+                    <div class="detalhes" style="display: none;">
+                      <h2>Karaage Seis Olhos</h2>
+                      <p><strong>Ingredientes:</strong></p><ul>
+                        <li>500g de coxas de frango, sem osso e sem pele, cortadas em pedaços pequenos
+                        </li>
+                        <li>3 colheres de sopa de shoyu (molho de soja japonês)
+                        </li>
+                        <li>2 colheres de sopa de saquê de cozinha (opcional)
+                        </li>
+                        <li>2 dentes de alho, picados
+                        </li>
+                        <li>1 colher de chá de gengibre fresco ralado
+                        </li>
+                        <li>1 ovo
+                        </li>
+                        <li>1/2 xícara de amido de milho (maisena)
+                        </li>
+                        <li>Óleo vegetal para fritar
+                        </li>
+                        <li>Sal a gosto
+                        </li>
+                      </ul>
+
+                      <p><strong>Modo de Preparo:</strong> </p> <ol>
+                        <li>Em uma tigela grande, misture o shoyu, o saquê de cozinha (se estiver usando), o alho picado e o gengibre ralado.
+                        </li>
+                        <li>Adicione os pedaços de frango à tigela e misture bem para garantir que fiquem completamente cobertos pela marinada. Deixe marinar na geladeira por pelo menos 30 minutos (ou até 2 horas) para que absorvam os sabores.
+                        </li>
+                        <li>Em outra tigela, bata o ovo.
+                        </li>
+                        <li>Em uma tigela rasa, coloque o amido de milho.
+                        </li>
+                        <li>Retire os pedaços de frango da marinada e passe-os primeiro no ovo batido e depois no amido de milho, certificando-se de cobri-los completamente.
+                        </li>
+                        <li>Aqueça o óleo vegetal em uma frigideira grande ou panela funda a 170-180°C.
+                        </li>
+                        <li>Frite os pedaços de frango em lotes, certificando-se de não lotar a frigideira. Frite por cerca de 5-6 minutos, virando-os ocasionalmente, até que fiquem dourados e crocantes.
+                        </li>
+                        <li>Retire o frango frito da frigideira e coloque-o em um prato forrado com papel toalha para escorrer o excesso de óleo.
+                        </li>
+                        <li>Repita o processo com o restante do frango.
+                        </li>
+                        <li>Sirva o Karaage quente, acompanhado de molho de soja ou molho de ponzu, e desfrute!
+                        </li>
+                      
+                    </ol>
+                    <button onclick="moverParaFavoritas('Receita1')">Mover para Favoritas</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="receita" style="border-style: ridge; border-color: brown;" id="Receita2">
+                      <h2>Sushi Restrito</h2>
+                      <img src="https://oreinodopeixe.com.br/wp-content/uploads/2021/08/CombinadoPadrao2.jpg" height="150" width="150">
+                      <p>Um sushi que desafia as leis do mundo culinario, algo que ate mesmo o chefe se impressiona de tão espetacular!</p>
+                    </div>
+                    <div class="detalhes" style="display: none;">
+                      <h2>Sushi Restrito</h2>
+                      <p><strong>Ingredientes:</strong></p><ul>
+                        <li>Algas Nori (folhas de nori)</li>
+                        <li>Arroz de sushi
+                        </li>
+                        <li>Peixe branco fresco (como linguado ou robalo)
+                        </li>
+                        <li>Salmão fresco
+                        </li>
+                        <li>Pepino </li>
+                        <li>Abacate </li>
+                        <li>Cream cheese
+                        </li>
+                        <li>Molho teriyaki (opcional)
+                        </li>
+                        <li>Gergelim branco e preto (para decorar)
+                        </li>
+                        <li> Wasabi (opcional)
+                        </li>
+                        <li> Molho de soja para mergulhar
+                        </li>
+                      </ul>
+
+                      <p><strong>Modo de Preparo:</strong> </p> <ol>
+                        <li>Prepare o arroz de sushi de acordo com as instruções da embalagem e deixe esfriar.
+                        </li>
+                        <li>Corte o peixe branco e o salmão em tiras finas.
+                        </li>
+                        <li>Descasque o pepino e corte-o em tiras finas e longas.
+                        </li>
+                        <li>Corte o abacate em fatias finas.
+                        </li>
+                        <li>Para fazer o rolo de sushi:
+                            <ul>
+                                <li> Coloque uma folha de nori em uma esteira de sushi.
+                                </li>
+                                <li> Espalhe uma camada fina e uniforme de arroz de sushi sobre a folha de nori, deixando uma borda de cerca de 1 cm sem arroz na parte superior.
+                                </li>
+                                <li> Coloque tiras do peixe branco, salmão, pepino e abacate no centro do arroz.
+                                </li>
+                                <li> Adicione uma pequena quantidade de cream cheese por cima dos ingredientes.
+                                </li>
+                                <li> Enrole o sushi firmemente com a esteira de sushi, pressionando gentilmente para compactar os ingredientes.
+                                </li>
+                                <li>  Se desejar, regue um pouco de molho teriyaki sobre o rolo de sushi enrolado.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Repita o processo para fazer outros rolos de sushi com diferentes combinações de ingredientes, se desejar.
+                        </li>
+                        <li> Corte os rolos de sushi em fatias usando uma faca afiada, mergulhando-a em água entre cada corte para garantir que fiquem limpos e uniformes.
+                        </li>
+                        <li> Decore os rolos de sushi com gergelim branco e preto.
+                        </li>
+                        <li> Sirva o Sushi Restrito com wasabi, molho de soja e outros acompanhamentos de sua preferência.
+                        </li>
+                        <button onclick="moverParaFavoritas('Receita2')">Mover para Favoritas</button>
+
+                      </ol>
+                      
+                    </div>
+                </li>
+                <li>
+                    <div class="receita" style="border-style: ridge; border-color: brown;" id="Receita3">
+                      <h2>Temaki Divergente</h2>
+                      <img src="https://pt.petitchef.com/imgupl/recipe/temaki-com-salmao-cebolinho-e-queijo-filadelfia--48304p59636.jpg" height="150" width="150">
+                      <p>Um temaki que surgiu de um mal costume, mas que teve seu potencial alcançado ao maximo!</p>
+                    </div>
+                    <div class="detalhes" style="display: none;">
+                      <h2>Temaki Divergente</h2>
+                      <p><strong>Ingredientes:</strong></p><ul>
+                        <li>Alga Nori (folhas de nori)
+                        </li>
+                        <li>Arroz de sushi
+                        </li>
+                        <li> Salmão fresco
+                        </li>
+                        <li>Abacate
+                        </li>
+                        <li>Manga 
+                        </li>
+                        <li>Cream cheese
+                        </li>
+                        <li>Cebolinha verde
+                        </li>
+                        <li>Molho picante (opcional)
+                        </li>
+                        <li> Gergelim preto (para decorar)
+                        </li>
+                        <li>Wasabi (opcional)
+                        </li>
+                        <li>Molho de soja para mergulhar
+                        </li>
+                        
+                      </ul>
+
+                      <p><strong>Modo de Preparo:</strong> </p> <ol>
+                        <li> Prepare o arroz de sushi conforme as instruções da embalagem e deixe esfriar.
+                        </li>
+                        <li> Corte o salmão em tiras finas.
+                        </li>
+                        <li> Descasque o abacate e corte-o em fatias finas.
+                        </li>
+                        <li> Descasque a manga e corte-a em fatias finas.
+                        </li>
+                        <li> Pique a cebolinha verde.
+                        </li>
+                        <li> Para fazer o temaki: 
+                            <ul>
+                                <li> Coloque uma folha de nori na palma da sua mão.
+                                </li>
+                                <li>Espalhe uma camada fina e uniforme de arroz de sushi sobre a folha de nori, deixando uma borda de cerca de 1 cm sem arroz na parte superior.
+                                </li>
+                                <li> Coloque tiras de salmão, fatias de abacate e manga no centro do arroz.
+                                </li>
+                                <li> Adicione um pouco de cream cheese por cima dos ingredientes.
+                                </li>
+                                <li> Se desejar, adicione um fio de molho picante para um toque de ousadia.
+                                </li>
+                                <li> Polvilhe um pouco de cebolinha verde por cima.
+                                </li>
+                                <li> Enrole a folha de nori em forma de cone, pressionando firmemente para garantir que os ingredientes fiquem bem compactados.
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li> Decore o temaki com gergelim preto.
+                        </li>
+                        <li>Sirva o temaki "Divergente" com wasabi, molho de soja e outros acompanhamentos de sua preferência.
+                        </li>
+                        <button onclick="moverParaFavoritas('Receita3')">Mover para Favoritas</button>
+                      </ol>
+                      
+                    </div>
+                </li>
+                <li>
+                    <div class="receita" style="border-style: ridge; border-color: brown;" id="Receita4">
+                      <h2>Gyoza Vulcânico</h2>
+                      <img src="https://mychefrecipe.com/wp-content/uploads/2021/01/Gyozas-presentation-04-650.jpg.webp" height="150" width="150">
+                      <p>Este Gyoza pode parecer fraco no começo...Mas sua ardência pode supreender ate o mais resistente paladar!</p>
+                    </div>
+                    <div class="detalhes" style="display: none;">
+                      <h2>Gyoza Vulcânico</h2>
+                      <p><strong>Ingredientes:</strong></p><ul>
+                        <li>250g de carne de porco moída
+                        </li>
+                        <li> 1 xícara de repolho picado
+                        </li>
+                        <li> 2 cebolinhas verdes, picadas
+                        </li>
+                        <li>2 dentes de alho, picados
+                        </li>
+                        <li> 1 colher de chá de óleo de gergelim
+                        </li>
+                        <li>1 colher de sopa de molho de soja picante
+                        </li>
+                        <li> Massa para gyoza (30-40 discos)
+                        </li>
+                        <li> Óleo vegetal para fritar
+                        </li>
+                      </ul>
+
+                      <p><strong>Modo de Preparo:</strong> </p> <ol>
+                        <li> Em uma tigela, misture a carne de porco moída, o repolho picado, as cebolinhas verdes e o alho picado.
+                        </li>
+                        <li> Adicione o óleo de gergelim e o molho de soja picante à mistura e mexa bem para incorporar os ingredientes.
+                        </li>
+                        <li> Coloque uma colher de sopa da mistura de recheio no centro de cada disco de massa para gyoza.
+                        </li>
+                        <li> Dobre a massa ao meio sobre o recheio e pressione as bordas para selar, formando um pequeno dumpling.
+                        </li>
+                        <li> Aqueça um pouco de óleo vegetal em uma frigideira antiaderente em fogo médio-alto. Coloque os gyoza na frigideira em uma única camada.
+                        </li>
+                        <li> Cozinhe por 2-3 minutos até que o fundo esteja dourado.
+                        </li>
+                        <li> Adicione 1/4 de xícara de água à frigideira e cubra com uma tampa. Cozinhe por mais 5-6 minutos até que os gyoza estejam cozidos e a água tenha evaporado.
+                        </li>
+                        <li> Sirva quente, acompanhado de molho de soja picante para mergulhar.
+                        </li>
+                        <button onclick="moverParaFavoritas('Receita4')">Mover para Favoritas</button>
+
+                      </ol>
+                      
+                    </div>
+                </li>
+
+            </ul>
+            <div class="overlay"></div>
+            <div class="popup">
+            </div>
+        </section>
+        <section class="ReceitPerfil" id="ReceitasFavoritas" style="display: none;">
+        </section>
+
+        <script src="função2.js"></script>
+        
+
+          
+    </body>
+    <footer>
+        <a href="condiçoesdeuso.html" style="display: flex; ">Termos de Uso/2024º</a>
+    </footer>
+</html>
